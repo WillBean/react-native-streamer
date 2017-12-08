@@ -10,9 +10,9 @@ import java.util.Map;
 /**
  * Created by Will Bean on 2017/11/28.
  */
-public class ImgTexFilterModule extends ReactContextBaseJavaModule {
+public class ImgTexFilterConstantsModule extends ReactContextBaseJavaModule {
 
-    public ImgTexFilterModule(ReactApplicationContext reactContext) {
+    public ImgTexFilterConstantsModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
