@@ -1,0 +1,3 @@
+rootProject.name = 'RNIdeaTest'
+
+include ':app'
