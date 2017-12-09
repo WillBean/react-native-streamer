@@ -8,7 +8,6 @@ import com.facebook.react.uimanager.ViewManager;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class ReactNativeStreamerPackage implements ReactPackage {
@@ -26,7 +25,7 @@ public class ReactNativeStreamerPackage implements ReactPackage {
         List<NativeModule> modules = new ArrayList<>();
 
         modules.add(new KSYStreamerModule(reactContext));
-        modules.add(new ImgTexFilterModule(reactContext));
+        modules.add(new ImgTexFilterConstantsModule(reactContext));
         modules.add(new KSYStreamerConstantsModule(reactContext));
         modules.add(new KSYAudioFilterConstantsModule(reactContext));
 

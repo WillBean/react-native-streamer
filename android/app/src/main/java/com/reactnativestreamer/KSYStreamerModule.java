@@ -1,18 +1,14 @@
 package com.reactnativestreamer;
 
-import android.support.annotation.Nullable;
 import com.facebook.react.bridge.*;
-import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.ksyun.media.streamer.capture.CameraCapture;
 import com.ksyun.media.streamer.filter.audio.AudioReverbFilter;
 import com.ksyun.media.streamer.filter.audio.KSYAudioEffectFilter;
 import com.ksyun.media.streamer.kit.KSYStreamer;
-import com.ksyun.media.streamer.kit.StreamerConstants;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.ksyun.media.streamer.filter.audio.KSYAudioEffectFilter.AUDIO_EFFECT_TYPE_FEMALE;
 
 /**
  * Created by Will Bean on 2017/11/28.

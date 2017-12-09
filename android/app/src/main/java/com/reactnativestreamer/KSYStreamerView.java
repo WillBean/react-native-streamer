@@ -7,11 +7,8 @@ import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.ksyun.media.streamer.capture.CameraCapture;
-import com.ksyun.media.streamer.filter.imgtex.ImgBeautyProFilter;
 import com.ksyun.media.streamer.filter.imgtex.ImgFilterBase;
 import com.ksyun.media.streamer.kit.KSYStreamer;
-import com.ksyun.media.streamer.kit.StreamerConstants;
 
 class KSYStreamerView extends GLSurfaceView {
     private Context ctx = null;

@@ -1,12 +1,10 @@
-package com.rnideatest;
+package com.reactnativestreamer;
 
-import android.app.Activity;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.SimpleViewManager;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.annotations.ReactProp;
 import com.ksyun.media.streamer.capture.CameraCapture;
-import com.ksyun.media.streamer.kit.KSYStreamer;
 import com.ksyun.media.streamer.kit.StreamerConstants;
 
 /**
