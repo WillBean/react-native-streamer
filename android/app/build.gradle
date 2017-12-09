@@ -96,7 +96,6 @@ android {
     buildToolsVersion "27.0.1"
 
     defaultConfig {
-        applicationId "com.rnideatest"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode 1
