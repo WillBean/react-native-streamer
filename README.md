@@ -32,7 +32,7 @@ dependencies {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(), 
-		  new ReactNativeStreamerPackage() // add this line
+          new ReactNativeStreamerPackage() // add this line
       );
     }
 ```
