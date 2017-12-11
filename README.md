@@ -1,7 +1,8 @@
 # react-native-streamer
-A react native plugin for live player
+#### A live framework for react native
+Integrated with [KSYStreamer SDK](https://github.com/ksvc/),react-native-streamer is a live streaming framework supporting RTMP,Network Auto Adapt,Beauty Filter,Beauty Voice,Software/Hardware Encoder etc.
 
-Android Installation
+#### Android Installation
 
 1. Install `react-native-streamer` latest stable version.
 ```
