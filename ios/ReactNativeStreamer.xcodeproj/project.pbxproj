@@ -1,0 +1,330 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BC3C1C2202F5775004561BE /* KSYStreamerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */; };
+		2BC3C1C4202F5794004561BE /* KSYStreamerUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */; };
+		2BC3C1C6202F57AA004561BE /* KSYStreamerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C5202F57AA004561BE /* KSYStreamerManager.m */; };
+		2BC3C24A203038AF004561BE /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC3C249203038AE004561BE /* GPUImage.framework */; };
+		2BC3C2BA20308BCA004561BE /* libksygpulive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BC3C2B920308BC9004561BE /* libksygpulive.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2BC3C146202F4E71004561BE /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2BC3C148202F4E71004561BE /* libReactNativeStreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeStreamer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC3C1AF202F5341004561BE /* KSYStreamerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYStreamerModule.h; sourceTree = "<group>"; };
+		2BC3C1C0202F5754004561BE /* KSYStreamerUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYStreamerUIView.h; sourceTree = "<group>"; };
+		2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYStreamerModule.m; sourceTree = "<group>"; };
+		2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYStreamerUIView.m; sourceTree = "<group>"; };
+		2BC3C1C5202F57AA004561BE /* KSYStreamerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYStreamerManager.m; sourceTree = "<group>"; };
+		2BC3C249203038AE004561BE /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = ../../../ios/GPUImage.framework; sourceTree = "<group>"; };
+		2BC3C2B920308BC9004561BE /* libksygpulive.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libksygpulive.framework; path = ../../../ios/libksygpulive.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BC3C145202F4E71004561BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC3C2BA20308BCA004561BE /* libksygpulive.framework in Frameworks */,
+				2BC3C24A203038AF004561BE /* GPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BC3C13F202F4E71004561BE = {
+			isa = PBXGroup;
+			children = (
+				2BC3C14A202F4E71004561BE /* ReactNativeStreamer */,
+				2BC3C149202F4E71004561BE /* Products */,
+				2BC3C2282030341F004561BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BC3C149202F4E71004561BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BC3C148202F4E71004561BE /* libReactNativeStreamer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BC3C14A202F4E71004561BE /* ReactNativeStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				2BC3C1AF202F5341004561BE /* KSYStreamerModule.h */,
+				2BC3C1C0202F5754004561BE /* KSYStreamerUIView.h */,
+				2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */,
+				2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */,
+				2BC3C1C5202F57AA004561BE /* KSYStreamerManager.m */,
+			);
+			path = ReactNativeStreamer;
+			sourceTree = "<group>";
+		};
+		2BC3C2282030341F004561BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BC3C2B920308BC9004561BE /* libksygpulive.framework */,
+				2BC3C249203038AE004561BE /* GPUImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BC3C147202F4E71004561BE /* ReactNativeStreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BC3C151202F4E71004561BE /* Build configuration list for PBXNativeTarget "ReactNativeStreamer" */;
+			buildPhases = (
+				2BC3C144202F4E71004561BE /* Sources */,
+				2BC3C145202F4E71004561BE /* Frameworks */,
+				2BC3C146202F4E71004561BE /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactNativeStreamer;
+			productName = ReactNativeStreamer;
+			productReference = 2BC3C148202F4E71004561BE /* libReactNativeStreamer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BC3C140202F4E71004561BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = bytedance;
+				TargetAttributes = {
+					2BC3C147202F4E71004561BE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2BC3C143202F4E71004561BE /* Build configuration list for PBXProject "ReactNativeStreamer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2BC3C13F202F4E71004561BE;
+			productRefGroup = 2BC3C149202F4E71004561BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BC3C147202F4E71004561BE /* ReactNativeStreamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BC3C144202F4E71004561BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC3C1C6202F57AA004561BE /* KSYStreamerManager.m in Sources */,
+				2BC3C1C2202F5775004561BE /* KSYStreamerModule.m in Sources */,
+				2BC3C1C4202F5794004561BE /* KSYStreamerUIView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2BC3C14F202F4E71004561BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2BC3C150202F4E71004561BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BC3C152202F4E71004561BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DAZCUKJ75;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../ios/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BC3C153202F4E71004561BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4DAZCUKJ75;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../../../ios/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC3C143202F4E71004561BE /* Build configuration list for PBXProject "ReactNativeStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC3C14F202F4E71004561BE /* Debug */,
+				2BC3C150202F4E71004561BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BC3C151202F4E71004561BE /* Build configuration list for PBXNativeTarget "ReactNativeStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BC3C152202F4E71004561BE /* Debug */,
+				2BC3C153202F4E71004561BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BC3C140202F4E71004561BE /* Project object */;
+}
