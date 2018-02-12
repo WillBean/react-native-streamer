@@ -3,6 +3,7 @@ import {
   View,
   Platform,
   NativeModules,
+  NativeEventEmitter,
   DeviceEventEmitter,
   requireNativeComponent
 } from 'react-native';
@@ -22,23 +23,27 @@ export default class Streamer extends Component {
   componentWillMount() {
     const {onStreamerInfo, onStreamerError} = this.props;
     if (Platform.OS === 'ios') {
-      this.subscription = streamerEmitter.addListener('onIOSStreamerInfo', onStreamerInfo);
+      if (onStreamerInfo)
+        this.subscription = streamerEmitter.addListener('onIOSStreamerInfo', onStreamerInfo);
     } else {
-      this.infoListener = DeviceEventEmitter.addListener('onStreamerInfoListener', onStreamerInfo);
-      this.errorListener = DeviceEventEmitter.addListener('onStreamerErrorListener', onStreamerError);
+      if (onStreamerInfo)
+        this.infoListener = DeviceEventEmitter.addListener('onStreamerInfoListener', onStreamerInfo);
+      if (onStreamerError)
+        this.errorListener = DeviceEventEmitter.addListener('onStreamerErrorListener', onStreamerError);
     }
   }
 
   componentWillUnmount() {
+    const {onStreamerInfo, onStreamerError} = this.props;
     if (Platform.OS === 'ios') {
-      this.subscription.remove();
+      onStreamerInfo && this.subscription.remove();
     } else {
-      this.infoListener.remove();
-      this.errorListener.remove();
+      onStreamerInfo && this.infoListener.remove();
+      onStreamerError && this.errorListener.remove();
     }
   }
 
   render() {
-    return <KSYStreamer {...this.props } />
+    return <KSYStreamer {...this.props} />
   }
 }
