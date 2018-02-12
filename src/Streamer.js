@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-const KSYStreamer = requireNativeComponent('KSYStreamerManager', Streamer);
+const KSYStreamer = requireNativeComponent('KSYStreamer', Streamer);
 const { KSYStreamerModule } = NativeModules;
 const streamerEmitter = new NativeEventEmitter(KSYStreamerModule);
 
