@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B72FA72203D5E47006D1F8E /* KSYPlayerUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B72FA71203D5E47006D1F8E /* KSYPlayerUIView.m */; };
+		2B72FA75203D5E86006D1F8E /* KSYPlayerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B72FA74203D5E86006D1F8E /* KSYPlayerModule.m */; };
+		2B72FA77203D5EAB006D1F8E /* KSYPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B72FA76203D5EAB006D1F8E /* KSYPlayerManager.m */; };
 		2BC3C1C2202F5775004561BE /* KSYStreamerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */; };
 		2BC3C1C4202F5794004561BE /* KSYStreamerUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */; };
 		2BC3C1C6202F57AA004561BE /* KSYStreamerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3C1C5202F57AA004561BE /* KSYStreamerManager.m */; };
@@ -28,6 +31,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B72FA70203D5E29006D1F8E /* KSYPlayerUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYPlayerUIView.h; sourceTree = "<group>"; };
+		2B72FA71203D5E47006D1F8E /* KSYPlayerUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYPlayerUIView.m; sourceTree = "<group>"; };
+		2B72FA73203D5E6E006D1F8E /* KSYPlayerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYPlayerModule.h; sourceTree = "<group>"; };
+		2B72FA74203D5E86006D1F8E /* KSYPlayerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYPlayerModule.m; sourceTree = "<group>"; };
+		2B72FA76203D5EAB006D1F8E /* KSYPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSYPlayerManager.m; sourceTree = "<group>"; };
 		2BC3C148202F4E71004561BE /* libReactNativeStreamer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactNativeStreamer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC3C1AF202F5341004561BE /* KSYStreamerModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYStreamerModule.h; sourceTree = "<group>"; };
 		2BC3C1C0202F5754004561BE /* KSYStreamerUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSYStreamerUIView.h; sourceTree = "<group>"; };
@@ -71,11 +79,16 @@
 		2BC3C14A202F4E71004561BE /* ReactNativeStreamer */ = {
 			isa = PBXGroup;
 			children = (
-				2BC3C1AF202F5341004561BE /* KSYStreamerModule.h */,
-				2BC3C1C0202F5754004561BE /* KSYStreamerUIView.h */,
-				2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */,
-				2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */,
 				2BC3C1C5202F57AA004561BE /* KSYStreamerManager.m */,
+				2BC3C1AF202F5341004561BE /* KSYStreamerModule.h */,
+				2BC3C1C1202F5775004561BE /* KSYStreamerModule.m */,
+				2BC3C1C0202F5754004561BE /* KSYStreamerUIView.h */,
+				2BC3C1C3202F5794004561BE /* KSYStreamerUIView.m */,
+				2B72FA70203D5E29006D1F8E /* KSYPlayerUIView.h */,
+				2B72FA71203D5E47006D1F8E /* KSYPlayerUIView.m */,
+				2B72FA73203D5E6E006D1F8E /* KSYPlayerModule.h */,
+				2B72FA74203D5E86006D1F8E /* KSYPlayerModule.m */,
+				2B72FA76203D5EAB006D1F8E /* KSYPlayerManager.m */,
 			);
 			path = ReactNativeStreamer;
 			sourceTree = "<group>";
@@ -147,7 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC3C1C6202F57AA004561BE /* KSYStreamerManager.m in Sources */,
+				2B72FA72203D5E47006D1F8E /* KSYPlayerUIView.m in Sources */,
 				2BC3C1C2202F5775004561BE /* KSYStreamerModule.m in Sources */,
+				2B72FA75203D5E86006D1F8E /* KSYPlayerModule.m in Sources */,
+				2B72FA77203D5EAB006D1F8E /* KSYPlayerManager.m in Sources */,
 				2BC3C1C4202F5794004561BE /* KSYStreamerUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

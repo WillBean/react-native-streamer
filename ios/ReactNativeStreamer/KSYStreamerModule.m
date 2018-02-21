@@ -27,16 +27,6 @@ RCT_EXPORT_MODULE();
     UIImage * rubbyMat = [UIImage imageNamed:@"3_tianmeikeren"];
     _bfFilter = [[KSYBeautifyFaceFilter alloc] initWithRubbyMaterial: rubbyMat];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onCaptureStateChange:)
-                                                 name:KSYCaptureStateDidChangeNotification
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onStreamStateChange:)
-                                                 name:KSYStreamStateDidChangeNotification
-                                               object:nil];
-    
     single = [super init];
     return single;
 }
@@ -218,6 +208,7 @@ RCT_EXPORT_METHOD(setAudioKeyEffectFilter:(int) i)
 
 + (void) setKitView:(KSYStreamerUIView *)view {
     kitView = view;
+    [single sendEventWithName:@"onIOSStreamerInfo" body:@{@"type": @"init", @"msg": @"inited"}];
 }
 
 /**
@@ -225,10 +216,26 @@ RCT_EXPORT_METHOD(setAudioKeyEffectFilter:(int) i)
  */
 -(void)startObserving {
     hasListeners = YES;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onCaptureStateChange:)
+                                                 name:KSYCaptureStateDidChangeNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onStreamStateChange:)
+                                                 name:KSYStreamStateDidChangeNotification
+                                               object:nil];
 }
 
 -(void)stopObserving {
     hasListeners = NO;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                 name:KSYCaptureStateDidChangeNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                 name:KSYStreamStateDidChangeNotification
+                                               object:nil];
 }
 
 - (NSArray<NSString *> *)supportedEvents
