@@ -26,7 +26,7 @@ RCT_EXPORT_MODULE();
     return single;
 }
 
-RCT_EXPORT_METHOD(prepareToPlay)
+RCT_EXPORT_METHOD(play)
 {
     [player prepareToPlay];
 }

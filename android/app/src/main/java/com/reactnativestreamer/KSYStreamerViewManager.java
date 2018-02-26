@@ -11,7 +11,7 @@ import com.ksyun.media.streamer.kit.StreamerConstants;
  * Created by Will Bean on 2017/11/27.
  */
 public class KSYStreamerViewManager extends SimpleViewManager<KSYStreamerView> {
-    private static final String REACT_CLASS = "RCTKSLiveView";
+    private static final String REACT_CLASS = "KSYStreamer";
 
     @Override
     public String getName(){
